@@ -1,0 +1,129 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "TileMap/testmap.tmx",
+    "expandedProjectPaths": [
+        "TileMap/TileSet",
+        "TileMap/TileAnimation",
+        "TileSet",
+        "TileMap",
+        "."
+    ],
+    "fileStates": {
+        "": {
+            "scaleInDock": 4
+        },
+        "/Users/besisejdijaj/OneDrive/GITHUB_PRIVATE/Unity/Overworld.tsx": {
+            "scaleInDock": 2,
+            "scaleInEditor": 5.5
+        },
+        "/Users/besisejdijaj/OneDrive/GITHUB_PRIVATE/Unity/RealOverworld.tsx": {
+            "scaleInDock": 5.5,
+            "scaleInEditor": 5.5
+        },
+        "/Users/besisejdijaj/OneDrive/GITHUB_PRIVATE/Unity/WaterTemplate.tsx": {
+            "scaleInDock": 2,
+            "scaleInEditor": 4
+        },
+        "/Users/besisejdijaj/OneDrive/GITHUB_PRIVATE/Unity/test.tmx": {
+            "scale": 2,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 891.75,
+                "y": 466.75
+            }
+        },
+        "/Users/besisejdijaj/OneDrive/GITHUB_PRIVATE/Unity/waterfall.tsx": {
+            "scaleInDock": 4,
+            "scaleInEditor": 5.5
+        },
+        "/Users/besisejdijaj/opt/LegendOfWaffles/Overworld.tsx": {
+            "scaleInDock": 1
+        },
+        "/Users/besisejdijaj/opt/LegendOfWaffles/RealOverworld.tsx": {
+            "scaleInDock": 1
+        },
+        "/Users/besisejdijaj/opt/LegendOfWaffles/WaterTemplate.tsx": {
+            "scaleInDock": 1
+        },
+        "/Users/besisejdijaj/opt/LegendOfWaffles/test.tmx": {
+            "scale": 0.25,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 502,
+                "y": 306
+            }
+        },
+        "/Users/besisejdijaj/opt/LegendOfWaffles/waterfall.tsx": {
+            "scaleInDock": 1
+        },
+        "TileMap/TileAnimation/Link-0001.tsx": {
+            "scaleInDock": 11
+        },
+        "TileMap/TileSet/CliffWaterTiles.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "TileMap/TileSet/Island.tsx": {
+            "scaleInDock": 1.5,
+            "scaleInEditor": 1
+        },
+        "TileMap/TileSet/OverworldTiles.tsx": {
+            "scaleInDock": 1.5,
+            "scaleInEditor": 1
+        },
+        "TileMap/TileSet/islandedge.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "TileMap/testmap.tmx": {
+            "scale": 1.5,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 231,
+                "y": 265.66666666666663
+            }
+        },
+        "TileSet/islandedge.tsx": {
+            "scaleInDock": 1.5,
+            "scaleInEditor": 1
+        }
+    },
+    "last.imagePath": "/Users/besisejdijaj/opt/LegendOfWaffles/ResourcesRaw/LinkToThePast",
+    "map.height": 500,
+    "map.lastUsedFormat": "tmx",
+    "map.layerDataFormat": null,
+    "map.orientation": null,
+    "map.tileHeight": 8,
+    "map.tileWidth": 8,
+    "map.width": 500,
+    "openFiles": [
+        "TileMap/testmap.tmx",
+        "TileMap/TileSet/Island.tsx",
+        "TileMap/TileSet/CliffWaterTiles.tsx",
+        "TileMap/TileSet/OverworldTiles.tsx"
+    ],
+    "project": "LegendOfWaffels.tiled-project",
+    "property.type": "int",
+    "recentFiles": [
+        "TileMap/TileSet/OverworldTiles.tsx",
+        "TileMap/TileSet/CliffWaterTiles.tsx",
+        "TileMap/TileSet/Island.tsx",
+        "TileMap/testmap.tmx",
+        "TileMap/TileSet/islandedge.tsx",
+        "TileSet/islandedge.tsx",
+        "/Users/besisejdijaj/OneDrive/GITHUB_PRIVATE/Unity/test.tmx",
+        "/Users/besisejdijaj/OneDrive/GITHUB_PRIVATE/Unity/waterfall.tsx",
+        "/Users/besisejdijaj/OneDrive/GITHUB_PRIVATE/Unity/Overworld.tsx",
+        "/Users/besisejdijaj/OneDrive/GITHUB_PRIVATE/Unity/WaterTemplate.tsx",
+        "/Users/besisejdijaj/OneDrive/GITHUB_PRIVATE/Unity/RealOverworld.tsx",
+        "/Users/besisejdijaj/opt/LegendOfWaffles/test.tmx"
+    ],
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.tileSize": {
+        "height": 24,
+        "width": 16
+    }
+}
