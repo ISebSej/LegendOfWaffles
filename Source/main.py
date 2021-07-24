@@ -7,7 +7,7 @@ from pytmx_custom import TiledObjectGroup
 from pytmx_custom import TiledTileLayer
 from pytmx_custom.util_pygame import load_pygame
 
-import os, time, math
+import os
 from pathlib import Path
 
 from mydebug import mydebugger
