@@ -12,6 +12,10 @@ class mydebugger:
     def tick(self):
         self.t = time.time()
 
-    def tock(self):
+    def tock(self, type):
         if self.frametime:
-            print(time.time() - self.t)
+            deltat = time.time() - self.t
+            if type == 0:
+                print(deltat)
+            elif type == 1:
+                print(1/deltat)

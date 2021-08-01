@@ -28,10 +28,13 @@ class Game(object):
         self.tileanimationdir = self.tilemapdir + 'TileAnimation'
 
         # display resolution
-        self.widthDisplay = 1920
-        self.heightDisplay = 1080
+        # self.widthDisplay = 1920
+        # self.heightDisplay = 1080
 
-        self.fps = 60
+        self.widthDisplay = 1080
+        self.heightDisplay = 720
+
+        self.fps = 30
 
 
     def run(self):
@@ -43,6 +46,7 @@ class Game(object):
         self.activemap = self.test_map
 
         while self.running:
+            
             self.debug.tick()
 
             # Read Objects on map
@@ -56,13 +60,16 @@ class Game(object):
 
             # Draw Tilemap
             self.camera.DrawMap()
-
             # Render Tilemap to Screen
             self.camera.Render()
 
             # Set Framerate
-            #self.debug.tock()
+            
+            
             pygame.time.Clock().tick(self.fps)
+            self.debug.tock(1)
+
+
 
         pygame.quit()
 

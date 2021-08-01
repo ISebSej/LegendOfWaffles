@@ -1,5 +1,5 @@
 from enum import Enum
-import pygame
+import pygame, time
 
 class Camera(object):
 
@@ -54,7 +54,6 @@ class Camera(object):
         """Will draw the currently active tilemap to the main renderBuffer
         Takes in the self.camera[XY] variables from the game instance"""
         # Fill bckgrnd
-        #########
         self.renderBuffer.fill((0, 0, 0))
         #split up tiles and pixels/subtiles
         X, subX = divmod(self.cameraX, 1)
@@ -80,10 +79,12 @@ class Camera(object):
                 for x, y, image in layer.tiles_range(X, Y,  X + dX, Y + dY):
                     self.renderBuffer.blit(image, ((x - X) * 8 - subX,  (y - Y) * 8 - subY))
 
+
     def Render(self):
         """Actually Flips the renderBuffer to the display"""
         pygame.transform.scale(self.renderBuffer, self.game.screen.get_size(), self.game.screen)
         pygame.display.flip()
+
 
 
 class CameraStates(Enum):
