@@ -1,24 +1,28 @@
 from enum import Enum
 import pygame
+from base import Base
+from pygame_aseprite_animation import *
 
-from animation import *
-
-class Player():
+class Player(Base):
 
     def __init__(self, _game):
+        super().__init__()
         self.game = _game
 
         self._playerX = 5
         self._playerY = 5
 
-        self.playerWidth = 32
-        self.playerHeight = 48
+    def _update(self, delta):
+        pass
+    
+    def _physics_update(self, delta):
+        pass
 
-        walkingAnimation = Animation('test.ase', AnimationTypes.LOOPING)
+    def _load_content(self):
+        pass
 
-        self.playerAnimationBuffer = pygame.Surface((self.playerWidth, self.playerHeight))
-
-        self.animationManager = AnimationManager([walkingAnimation])
+    def _input(self):
+        pass
 
     @property
     def playerX(self):

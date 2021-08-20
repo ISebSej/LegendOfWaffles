@@ -3,13 +3,13 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "TileMap/testmap.tmx",
+    "activeFile": "/Users/besisejdijaj/opt/Tiled-to-Voxel/TiledProject/TileSet/2D/test.tsx",
     "expandedProjectPaths": [
-        "TileMap/TileSet",
+        "TileMap",
+        ".",
         "TileMap/TileAnimation",
         "TileSet",
-        "TileMap",
-        "."
+        "TileMap/TileSet"
     ],
     "fileStates": {
         "": {
@@ -59,6 +59,18 @@
         "/Users/besisejdijaj/opt/LegendOfWaffles/waterfall.tsx": {
             "scaleInDock": 1
         },
+        "/Users/besisejdijaj/opt/Tiled-to-Voxel/TiledProject/TileMap/test66.tmx": {
+            "scale": 14.928571428571427,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 29.339712918660283,
+                "y": 29.70813397129187
+            }
+        },
+        "/Users/besisejdijaj/opt/Tiled-to-Voxel/TiledProject/TileSet/2D/test.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
         "TileMap/TileAnimation/Link-0001.tsx": {
             "scaleInDock": 11
         },
@@ -82,8 +94,8 @@
             "scale": 1.5,
             "selectedLayer": 2,
             "viewCenter": {
-                "x": 231,
-                "y": 265.66666666666663
+                "x": 640.3333333333333,
+                "y": 592.3333333333333
             }
         },
         "TileSet/islandedge.tsx": {
@@ -91,23 +103,23 @@
             "scaleInEditor": 1
         }
     },
-    "last.imagePath": "/Users/besisejdijaj/opt/LegendOfWaffles/ResourcesRaw/LinkToThePast",
-    "map.height": 500,
+    "last.imagePath": "/Users/besisejdijaj/opt/Tiled-to-Voxel/TiledProject/TileSet/2D",
+    "map.height": 6,
     "map.lastUsedFormat": "tmx",
     "map.layerDataFormat": null,
     "map.orientation": null,
     "map.tileHeight": 8,
     "map.tileWidth": 8,
-    "map.width": 500,
+    "map.width": 6,
     "openFiles": [
-        "TileMap/testmap.tmx",
-        "TileMap/TileSet/Island.tsx",
-        "TileMap/TileSet/CliffWaterTiles.tsx",
-        "TileMap/TileSet/OverworldTiles.tsx"
+        "/Users/besisejdijaj/opt/Tiled-to-Voxel/TiledProject/TileMap/test66.tmx",
+        "/Users/besisejdijaj/opt/Tiled-to-Voxel/TiledProject/TileSet/2D/test.tsx"
     ],
     "project": "LegendOfWaffels.tiled-project",
     "property.type": "int",
     "recentFiles": [
+        "/Users/besisejdijaj/opt/Tiled-to-Voxel/TiledProject/TileMap/test66.tmx",
+        "/Users/besisejdijaj/opt/Tiled-to-Voxel/TiledProject/TileSet/2D/test.tsx",
         "TileMap/TileSet/OverworldTiles.tsx",
         "TileMap/TileSet/CliffWaterTiles.tsx",
         "TileMap/TileSet/Island.tsx",
@@ -117,13 +129,11 @@
         "/Users/besisejdijaj/OneDrive/GITHUB_PRIVATE/Unity/test.tmx",
         "/Users/besisejdijaj/OneDrive/GITHUB_PRIVATE/Unity/waterfall.tsx",
         "/Users/besisejdijaj/OneDrive/GITHUB_PRIVATE/Unity/Overworld.tsx",
-        "/Users/besisejdijaj/OneDrive/GITHUB_PRIVATE/Unity/WaterTemplate.tsx",
-        "/Users/besisejdijaj/OneDrive/GITHUB_PRIVATE/Unity/RealOverworld.tsx",
-        "/Users/besisejdijaj/opt/LegendOfWaffles/test.tmx"
+        "/Users/besisejdijaj/OneDrive/GITHUB_PRIVATE/Unity/WaterTemplate.tsx"
     ],
     "tileset.lastUsedFormat": "tsx",
     "tileset.tileSize": {
-        "height": 24,
-        "width": 16
+        "height": 8,
+        "width": 8
     }
 }
