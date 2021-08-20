@@ -7,11 +7,10 @@ from pytmx_custom import TiledObjectGroup
 from pytmx_custom import TiledTileLayer
 from pytmx_custom.util_pygame import load_pygame
 
-import os, time, math
+import os, time
 from pathlib import Path
 
-from handleinputs import Controller
-from camera import Camera
+from map import Map
 from player import Player
 from base import Base
 
@@ -19,8 +18,6 @@ class Game(object):
 
     def __init__(self):
         """Initialize Game Parameters"""
-        # Display debug print statements if true
-
         # set important directories
         self.dirname = os.path.dirname(__file__)
         self.tilemapdir = str(Path(self.dirname).parent / 'TiledProject' / 'TileMap')
@@ -30,6 +27,7 @@ class Game(object):
         # display resolution
         self.widthDisplay  = 1920
         self.heightDisplay = 1080
+        
         # 
         self.physics_fps = 30
 
@@ -51,12 +49,6 @@ class Game(object):
             # Check if Quit is pressed
             self.QuitButtonCheck()
 
-            # Read Objects on map
-            self.FindObjects()
-
-            # Read Boundaries on map
-            self.FindCollision()
-
             # Update Timings
             self.tock_update()
             self.tock_physics_update()
@@ -72,7 +64,7 @@ class Game(object):
                 self.tick_physics_update()
             
             # Render Tilemap to Screen
-            # self.camera.Render()
+            Base.render_all()
             
             self.tick_update()
 
@@ -81,7 +73,7 @@ class Game(object):
 
     def Initialize(self):
         """Initialize the surfaces and screens"""
-        # Initi pygame 
+        
         # Init the main display output
         self.screen = pygame.display.set_mode((self.widthDisplay, self.heightDisplay))
         # Set Window Name
@@ -91,21 +83,16 @@ class Game(object):
         # Initiate timing
         self.tick_update()
         self.tick_physics_update()
+        # Make game globally available
+        Base._game = self
 
     def UserInitialize(self):
         # Put your init code here
         # create your scene
-        pass
+        self.map_list = []
+        map = load_pygame(self.tilemapdir + '/testmap.tmx')
+        self.map_list.append(Map(map))
 
-    def LoadContent(self):
-        self.test_map = load_pygame(self.tilemapdir + '/testmap.tmx')
-
-
-    def FindObjects(self):
-        pass
-
-    def FindCollision(self):
-        pass
     
     def QuitButtonCheck(self):
         for event in pygame.event.get():

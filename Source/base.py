@@ -1,8 +1,7 @@
-from camera import Camera
-
 class Base:
     """Class that provides global game functionality like update(). make sure to run super().__init__() to add it to the global list"""
     _instances = []
+    _game      = None
 
     def __init__(self):
         self.__class__._instances.append(self)
@@ -24,6 +23,9 @@ class Base:
     def _input(self):
         pass
 
+    def _render(self):
+        pass
+
     @classmethod
     def update_all(cls, delta):
         for instance in cls._instances:
@@ -39,6 +41,19 @@ class Base:
         for instance in cls._instances:
             instance._load_content()
 
+    @classmethod
     def input_all(cls):
         for instance in cls._instances:
             instance._input()
+
+    @classmethod
+    def render_all(cls):
+        for instance in cls._instances:
+            instance._render()
+
+    def get_by_type(cls, type):
+        list = []
+        for instance in cls._instances:
+            if isinstance(instance, type):
+                list.append(instance)
+        return list
